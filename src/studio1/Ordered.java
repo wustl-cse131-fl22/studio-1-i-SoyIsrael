@@ -16,6 +16,20 @@ public class Ordered {
 		System.out.println("Value for z?");
 		int z = in.nextInt();
 
+		boolean isOrdered = false;
+		
+		boolean backOrdered = false;
+				
+		isOrdered = x < y;
+		
+		isOrdered = y < z;
+		
+		backOrdered = (z < y);
+		
+		backOrdered = (y < x);
+		
+		System.out.print(isOrdered == !backOrdered);
+		
 	}
 
 }
